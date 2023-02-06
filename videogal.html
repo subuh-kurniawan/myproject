@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Video modal autoplay (Youtube, vimeo)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container text-center">
+  <h2 class="my-4">Video modal (Bootstrap) autoplay (Youtube, vimeo)</h2>
+  <button href="#" class="btn btn-primary videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://player.vimeo.com/video/121428012">Vimeo</button>
+
+  <button href="#" class="btn btn-danger videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/aILlVYUSwPg">Youtube</button>
+  
+  <button href="#" class="btn btn-default videoModalTriger" type="button" data-toggle="modal" data-target="#videoModal" data-videoModal="//www.dailymotion.com/embed/video/x63z29r">Dailymotion</button>
+</div>
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close btn-round btn-primary" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script><script  src="./vgal.js"></script>
+
+</body>
+</html>
